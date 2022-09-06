@@ -1,0 +1,25 @@
+### POST ONE
+POST http://localhost:9292/products
+Content-Type: application/json
+
+{
+  "name": "RaspBerry Pi 1",
+  "qty": 100,
+  "price": 155.5
+}
+
+### POST TWO
+POST http://localhost:9292/products
+Content-Type: application/json
+
+{
+  "name": "RaspBerry Pi 4",
+  "qty": 100,
+  "price": 300.5
+}
+
+### GET ALL
+GET http://localhost:9292/products
+
+### GET RANGE
+GET http://localhost:9292/products/product-range?min=100&max=200
