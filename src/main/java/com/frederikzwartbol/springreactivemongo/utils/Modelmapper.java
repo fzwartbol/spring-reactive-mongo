@@ -10,6 +10,6 @@ public class Modelmapper {
     }
 
     public static Product dtoToEntity(ProductDTO productDTO) {
-        return new Product(productDTO.getId(), productDTO.getName(), productDTO.getQty(), productDTO.getPrice());
+        return new Product(productDTO.getId(), productDTO.getName(), productDTO.getQuantity(), productDTO.getPrice());
     }
 }

@@ -61,7 +61,7 @@ public class ProductService {
                 .zipWith(productDTO, (dbProduct, requestProduct) -> {
                     dbProduct.setName(requestProduct.getName());
                     dbProduct.setPrice(requestProduct.getPrice());
-                    dbProduct.setQuantity(requestProduct.getQty());
+                    dbProduct.setQuantity(requestProduct.getQuantity());
                     return dbProduct;
                 })
                 .flatMap(productRepository::save)
